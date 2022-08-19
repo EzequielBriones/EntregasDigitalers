@@ -6,7 +6,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   let valor = input.value;
 
-  let regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/g;
+  let regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{12,}$/g;
 
   if (regex.test(valor)) {
     console.log("Valido!");
